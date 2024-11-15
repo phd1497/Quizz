@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <div class="option-container" id="opt">
+        <h2 id="title-choose">Please choose a option</h2>
+        <div class="grp-choose">
+            <button id="add-btn" onclick="Addfn()">Add Question</button>
+            <button id="start-btn" onclick="Startquizz()">Start Quizz</button>
+        </div>
+    </div>
+
+    <div class="quiz-container" id="quizz">
+        <h2 id="question">Are you ready???</h2>
+        <div id="options">
+            <button class="option-btn">Option 1</button>
+            <button class="option-btn">Option 2</button>
+            <button class="option-btn">Option 3</button>
+            <button class="option-btn">Option 4</button>
+        </div>
+        <button id="startButton" onclick="Startfn()">Let's go</button>
+        <button id="restartButton" style="display: none;">Start Over</button>
+        <p id="congratulation"></p>
+        <p id="score"></p>
+    </div>
+
+    <div class="question-container" id="qts">
+        <h2 id="title-choose">Fill full information below</h2>
+        <div class="grp-question">
+            <p class="title-question" style="text-align: left;">What is your question?</p>
+            <input class="ipt-answer" type="text" placeholder="Your question" id="yourquestion" required>
+            <p class="title-question" style="text-align: left;">3 wrong answers .</p>
+            <input class="iptw-answer" type="text" placeholder="Your answer" id="wronganswer1" required>
+            <input class="iptw-answer" type="text" placeholder="Your answer" id="wronganswer2" required>
+            <input class="iptw-answer" type="text" placeholder="Your answer" id="wronganswer3" required>
+            <p class="title-question" style="text-align: left;">A right answer.</p>
+            <input class="iptr-answer" type="text" placeholder="Your answer" id="rightanswer" required>
+        </div>
+        <p class="alert_info" id="alert_info">Your question is submited!!!</p>
+        <button id="submit" onclick="Submit_Addfn()">Submit</button>
+        <button id="start-btn" onclick="Startquizz()">Start Quizz</button>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
